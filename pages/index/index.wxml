@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<image src="../../assets/img/1.jpg" class="weather_bg"></image>
+<view class="container">
+
+  <view class="nowWeather">
+    <view class="province w">{{province}}   {{city}}</view>
+    <view class="city w">{{district}} {{street}}</view>
+    <view class="temp w">{{nowTemp}}℃</view>
+    <view class="weather w">多云 | 空气 优</view>
+  </view>
+
+  <view class="weatherDeatil">
+    <view class="weather_word w">
+      <view class="center">南风</view>
+      <view class="center">3-4级</view>
+    </view>
+    <view class="break"></view>
+    <view class="weather_word w">
+      <view class="center">湿度</view>
+      <view class="center">30%</view>
+    </view>
+    <view class="break"></view>
+    <view class="weather_word w">
+      <view class="center">体感温度</view>
+      <view class="center">2℃</view>
+    </view>
+  </view>
+</view>
+
+<view wx:for="{{[1,2,3]}}" wx:for-index="i" wx:for-item="item">
+  <view class="hor forcast">
+    <view class="center">今天</view>
+    <view class="hor">
+      <image class="img" src="../../assets/img/1.jpg"></image>
+      <view>雷阵雨|优</view>
+    </view>
+    <view class="hor">2℃/ 5℃</view>    
+  </view>
+</view>
